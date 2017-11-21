@@ -1,4 +1,4 @@
-# AWS SAM Local と Localstack を使って始めるローカルでLambdaのテスト
+# AWS SAM Local と Localstack を使って ローカルでAWS Lambdaのコードを動かす。
 
 今回動かすアプリケーションはAPI Gateway経由で起動されたAWS Lambdaから
 テストデータをS3に書き込むだけのアプリケーションを全てローカルで動かしてみたいと思います。
