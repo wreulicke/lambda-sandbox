@@ -1,0 +1,20 @@
+{
+  "name": "sam-local",
+  "version": "1.0.0",
+  "private": true,
+  "description": "sam-local test app",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "local": "sam local start-api --docker-network a21e3fd64197 --env-vars env.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/aws-lambda": "0.0.21",
+    "@types/node": "^8.0.53",
+    "aws-sdk": "^2.154.0",
+    "typescript": "^2.6.1"
+  }
+}
