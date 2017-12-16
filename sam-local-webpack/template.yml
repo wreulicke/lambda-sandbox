@@ -1,0 +1,23 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: SAM Local test
+Parameters:
+  SlackToken:
+    Type : String
+    Description : Enter slack token for bot.
+Resources:
+  HelloWorld:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: target/
+      Handler: index.postMessage
+      Runtime: nodejs6.10
+      Environment:
+        Variables:
+          SLACK_TOKEN: !Ref SlackToken
+      Events:
+        GetResource:
+          Type: Api
+          Properties:
+            Path: /message
+            Method: post
