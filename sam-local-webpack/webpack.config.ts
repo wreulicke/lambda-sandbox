@@ -1,5 +1,4 @@
 "use strict"
-// @ts-check
 import * as path from "path"
 
 import * as webpack from "webpack"
@@ -16,9 +15,6 @@ const config: webpack.Configuration = {
   resolve: {
     extensions: [".json", ".tsx", ".ts", ".js"]
   },
-  // externals: {
-  //   "@slack/client": "commonjs @slack/client"
-  // },
   plugins: [
     // new webpack.optimize.UglifyJsPlugin()
   ],
